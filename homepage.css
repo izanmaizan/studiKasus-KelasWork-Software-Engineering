@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Enriqueta&family=Exo:wght@400;500;600;700&display=swap');
+
+body {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	font-family: 'Exo', sans-serif;
+}
+
+nav {
+	width: 100%;
+	height: 8vh;
+	background: #15803D;
+	top: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.navigation {
+	width: 90%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo {
+	display: flex;
+	flex-direction: column;
+	font-family: 'Enriqueta', serif;
+	color: white;
+}
+
+.logo-b {
+	font-size: 18px;
+}
+
+.logo-k {
+	font-size: 14px;
+}
+
+.masuk {
+	background: #1D4ED8;
+	padding: 4px 14px;
+	width: 80px;
+	height: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px;
+}
+
+.masuk:hover {
+	background: #1e40af;
+}
+
+.masuk a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.masuk a:hover {
+	color: #d1d5db;
+}
+
+.banner {
+	background: url("asset/jumbotron.webp");
+	width: 100%;
+	height: 480px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	position: relative;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.backdrop {
+	background: #000;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	opacity: 0.5;
+	z-index: 0;
+}
+
+.banner h1 {
+	font-size: 43px;
+	color: white;
+	z-index: 1;
+	font-family: 'Exo', sans-serif;
+	font-weight: 400;
+}
+
+.daftar {
+	color: white;
+	z-index: 1;
+	text-decoration: none;
+	background: #22C55E;
+	padding: 27px 31px;
+	border-radius: 55px;
+	display: inline-flex;
+	justify-content: flex-end;
+	align-items: center;
+	font-size: 16px;
+	font-weight: 600;
+	margin-top: 28px;
+}
+
+.daftar:hover {
+	background: #16A34A;
+}
+
+.aside {
+	margin: 0;
+	padding: 0;
+}
+
+.visimisi {
+	width: 100%;
+	gap: 2rem;
+	display: flex;
+	justify-content: center;
+	margin: 30px 0px 30px 0px;
+	flex-wrap: nowrap;
+}
+
+.wrapper {
+	width: 30%;
+	margin-top: 10px;
+/*	padding: 14vw 14vw 0px 0px;*/
+}
+
+.wrapper h1 {
+	font-size: 28px;
+	position: relative;
+	left: 32px;
+	margin-bottom: 0;
+}
+
+.dot {
+	width: 25vw;
+	height: 10px;
+	background: rgba(34, 197, 94, 0.62);
+	border-radius: 0px 15px 15px 0px;
+}
+
+.wrapper p,
+.wrapper pre {
+	font-size: 18px;
+}
+
+article {
+	display: flex;
+	flex-direction: row;
+	background: #86EFAC;
+	padding-top: 48px;
+	justify-content: center;
+	gap: 3rem;
+}
+
+.admin-logo img {
+	padding-left: 40px;
+	width: 170px;
+	height: 130px;
+}
+
+article pre {
+	width: 70%;
+	padding-left: 50px;
+	font-size: 20px;
+}
+
+/* Media query untuk ukuran layar 700px atau kurang */
+@media (max-width: 700px) {
+    nav {
+        height: auto; /* Ubah tinggi nav menjadi otomatis */
+        flex-direction: column; /* Mengubah arah flex menjadi vertikal */
+        align-items: center; /* Pusatkan elemen vertikal */
+    }
+
+    .navigation {
+        width: 100%; /* Agar mengisi seluruh lebar */
+        flex-direction: column; /* Mengubah arah flex menjadi vertikal */
+        align-items: center; /* Pusatkan elemen vertikal */
+    }
+
+    .logo {
+        text-align: center; /* Pusatkan teks dalam logo */
+        margin-bottom: 10px; /* Tambahkan margin bawah untuk pemisah */
+    }
+
+    .masuk {
+        width: 90vw; /* Agar mengisi seluruh lebar */
+        margin-top: 10px; /* Tambahkan margin atas untuk pemisah */
+    }
+
+    .masuk a {
+        display: block; /* Agar tautan penuh lebar */
+        text-align: center; /* Pusatkan teks dalam tautan */
+        padding: 10px; /* Ubah padding tautan */
+    }
+
+    .banner {
+    	width: auto;
+        height: auto; /* Ubah tinggi header menjadi otomatis */
+        background-position: top; /* Ubah posisi latar belakang */
+        padding: 20px; /* Tambahkan padding atas/bawah */
+        text-align: center; /* Pusatkan teks dalam header */
+    }
+
+    .daftar {
+        width: auto; /* Agar mengisi seluruh lebar */
+        margin-top: 20px; /* Tambahkan margin atas untuk pemisah */
+    }
+}
+
+
+/* Ubah media query Anda untuk ukuran layar 700px */
+@media (max-width: 700px) {
+    .visimisi {
+        flex-direction: column; /* Mengubah arah flex menjadi vertikal */
+        align-items: center; /* Pusatkan elemen vertikal */
+    }
+
+    .wrapper {
+        width: 100%; /* Agar wrapper mengisi seluruh lebar layar */
+        text-align: center; /* Pusatkan teks dalam wrapper */
+    }
+
+    .wrapper h1 {
+        left: 0; /* Set ulang posisi kiri h1 */
+        margin-bottom: 10px; /* Tambahkan margin bawah agar ada ruang antara elemen */
+    }
+
+    .dot {
+        width: 100%; /* Agar dot mengisi seluruh lebar wrapper */
+        border-radius: 0; /* Hapus border-radius */
+        margin-bottom: 10px; /* Tambahkan margin bawah agar ada ruang antara elemen */
+    }
+}
+
+/* Media query untuk ukuran layar 700px atau kurang */
+@media (max-width: 700px) {
+    article {
+        flex-direction: column; /* Mengubah arah flex menjadi vertikal */
+        align-items: center; /* Pusatkan elemen vertikal */
+        text-align: center; /* Pusatkan teks dalam artikel */
+    }
+
+    .admin-logo img {
+        width: 70vw; /* Mengurangi lebar logo */
+        height: auto; /* Agar aspek rasio tetap terjaga */
+    }
+
+    article pre {
+        width: 100%; /* Agar teks mengisi seluruh lebar */
+        padding-left: 0; /* Hapus padding kiri */
+        font-size: 18px; /* Kurangi ukuran font untuk teks lebih kecil */
+    }
+}
